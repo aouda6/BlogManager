@@ -16,7 +16,7 @@ app.use(function (request, response, next) {
 app.use('/posts', posts);
 app.use('/comments', comments);
 
-mongoose.connect('mongodb://localhost/startUp', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/blogPost', { useMongoClient: true });
 
 app.listen(3700, function () {
     console.log('The Start-up server is listening on port 3700');
